@@ -18,7 +18,7 @@ from db import init_db
 
 DEFAULT_PORT = 9000
 LOWEST_PORT_NUMBER = 2000
-def get_valid_port(port_nr: int):
+def get_valid_port(port_nr):
     """
     Check the validity of a port number given, if it is valid, return the port number in integer
     Port is valid if it is positive number greater than 2000 (port number 2000 usually is reserved for super user processes).
