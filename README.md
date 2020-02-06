@@ -56,6 +56,8 @@ or with more output:
 
 % python main.py -v
 
+NOTES: Keeping running 'python main.py -v' for the rest of the tests below.
+
 ```  
 - Run the REST API client ('curl') against the URL (use 'POST' to create a new invoice, 'GET' to retrieve it back)    
 WARNING: Please give the date with the correct format YYYY-MM-DD, I do NOT make a sanity check on the back end this time, Sorry!!!
