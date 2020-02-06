@@ -2,16 +2,16 @@
 This is a README for a simplified demo invoice app
 
 ## Contents
-- Remarks
+- Remarks on the assignment
 - Requirements for deployment & test    
-- Quickstart: Test & Debug    
-
-## Remarks
-- I do not wish to use elaborated directory/file layouts (and python packaging techniques) right now as I want to keep the demo quick to implement (sorry for that), straight-forward and easy to use/demonstrate.     
-  The application does NOT have a lot of logics and abstraction right now,
-  instead it focuses on the data model, database and its access.
-  Therefore it does not make a lot of sense to have unit tests (as there is hardly complicated logics here).
-  So I decided to forsake the (unit) tests in order to quickly implement the functionalities. 
+- Quickstart: Download & Test & Debug 
+   
+## Remarks on the assignment
+- For this task, I am not incline to use elaborated directory/file layouts (and python packaging techniques) right now as I want to keep the demo quick to implement (sorry for that), and easy to use/demonstrate.     
+  Right now the application is simple and straight-forward. It does NOT have a lot of logics and abstraction right now,
+  It focuses on the implementation of REST API, database and its access via SQLAlchemy ORM library.
+  Therefore eventhough tests are important, it does not make a lot of sense to have unit tests (as there is hardly complicated logics here).
+  So I decided to forsake the (unit) tests in order to quickly implement the functionalities and complete the task. In real application development, such tests are mandatory though. 
 - I strive to avoid using external python library if it is not a must (see the requirements below).   
 - As the project description does NOT specify to implement complete CRUD operations, only 'create' is implemented. So the data is never deleted/updated (via the demo application)
 - Consequently, there is no delete operation supported for Invoice and InvoiceItem. If delete an Invoice in the DB manually, there will NOT be a cascade delete automatically (its invoice items are deleted as well)
@@ -20,6 +20,7 @@ This is a README for a simplified demo invoice app
 
 ## Requirements for deployment & test  
 - Python 3.x.x and pip (refer to how to install python for your development environment)  
+- OPTIONAL but nice to have: virtualenv
 - sqlalchemy and sqlite (installed together with sqlalchemy)
 ```
 % pip install sqlalchemy
@@ -38,11 +39,14 @@ OR better
 ```  
 - curl or any other REST API client (postman)
 
-## Quickstart: Test & Debug       
+## Quickstart: Download & Test & Debug   
+- Download the source code from https://github.com/iharijono/eastridge_invoice.git
+```
+% git clone https://github.com/iharijono/eastridge_invoice.git
+```     
 - Start the app that print the information how to use it:   
 ```
 % python main.py -h
-
 ```  
 - Start the app (backend) to accept RESTful API request:   
 ```
