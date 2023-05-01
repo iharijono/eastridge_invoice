@@ -2,5 +2,5 @@
 # Usually all python extensions/libraries that are installed using pip, are listed here
 # 
 #
-Flask==1.1.1
+Flask==2.3.2
 SQLAlchemy==1.3.13
